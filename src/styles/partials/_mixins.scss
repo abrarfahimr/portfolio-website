@@ -1,0 +1,101 @@
+@use './colors' as *;
+@use './fonts' as *;
+@use './variables' as *;
+
+//media quaries
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-min-size){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-min-size){
+    @content;
+  }
+}
+
+//Font Styles
+@mixin page-header{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  @include tablet(){
+    font-size: 2.5rem;
+  }
+}
+
+@mixin page-subheader{
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+  @include tablet(){
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@mixin landing-subheader{
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  @include tablet(){
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+  }
+}
+
+@mixin section-header{
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+  @include tablet(){
+    font-size: 1.5rem;
+  }
+}
+
+@mixin page-body{
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  @include tablet(){
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+}
+
+@mixin page-label{
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  font-weight: 400;
+  @include tablet(){
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@mixin footer-label{
+  font-size: 0.5rem;
+  line-height: 0.625rem;
+  font-weight: 400;
+  @include tablet(){
+    font-size: 0.625rem;
+    line-height: 0.7813rem;
+  }
+}
+
+//button style
+@mixin primarybtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: $portfolio-yellow;
+  &:hover{
+    transition-duration: 0.2s;
+    background-color: $portfolio-darkyellow;
+  }
+}
