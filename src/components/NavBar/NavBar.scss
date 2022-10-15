@@ -1,0 +1,48 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 50%;
+  transform: translateX(100%);
+  transition: 0.4s;
+  height: 100vh;
+  padding: 1rem;
+  background-color: $portfolio-blue900;
+  &--open {
+      @extend .nav;
+      transform: translateX(0%);
+    }
+  &__closecontainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  &__anchor{
+    text-decoration: none;
+    color: $portfolio-yellow;
+    margin-left: 0.75rem;
+    &:hover{
+      transition-duration: 0.2s;
+      color: $portfolio-darkyellow;
+    }
+  }
+}
