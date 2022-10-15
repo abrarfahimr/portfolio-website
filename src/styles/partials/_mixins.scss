@@ -99,3 +99,8 @@
     background-color: $portfolio-darkyellow;
   }
 }
+
+//border bottom
+@mixin borderBottom {
+  border-bottom: 1px solid $portfolio-grey700;
+}
