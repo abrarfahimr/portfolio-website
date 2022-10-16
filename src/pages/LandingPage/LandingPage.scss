@@ -48,6 +48,8 @@
   }
   &__focus{
     font-size: 0.875rem;
+    padding-bottom: 1rem;
+    @include borderBottom;
   }
   &__animate{
     animation-name: wave;
@@ -58,5 +60,51 @@
   }
   &__imagecontainer{
     display: none;
+  }
+  &__sectionheader{
+    @include section-header;
+  }
+  &__projectcontainer{
+    display: flex;
+    flex-direction: column;
+  }
+  &__project{
+    position: relative;
+    width: 100%;
+    background-color: $portfolio-black;
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    margin-bottom: 2rem;
+    &:hover{
+      transition-duration: 0.2s;
+      background-color: $portfolio-grey700;
+    }
+  }
+  &__projectimage{
+    width: 100%;
+    height: auto;
+  }
+  &__title{
+    @include section-header;
+  }
+  &__description{
+    @include page-body;
+  }
+  &__stack{
+    @include page-label;
+  }
+  &__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+    background-color: $portfolio-grey700;
+    opacity: 0;
+    &:hover{
+      transition-duration: 0.2s;
+      opacity: 0.5;
+    }
   }
 }

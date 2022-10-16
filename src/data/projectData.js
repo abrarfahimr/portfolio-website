@@ -1,11 +1,11 @@
 import dashboard from '../assets/images/coffee-corner.png';
 import instock from '../assets/images/instock.png';
 import wnba from '../assets/images/wnba.png';
-import pokemon from '../assets/images/pokemon';
+import pokemon from '../assets/images/pokemon.png';
 
 export const projectData = [
   {
-    image: { dashboard },
+    image: dashboard ,
     projectname: 'Coffee Corner Dashboard',
     shortdescription:
       'Coffee Corner is a dashboard created for a startup business that specializes in selling coffee products from different roasters around the world.',
@@ -27,7 +27,7 @@ export const projectData = [
     github: 'https://github.com/abrarfahimr/coffee-corner-frontend',
   },
   {
-    image: { instock },
+    image: instock ,
     projectname: 'Instock',
     shortdescription:
       'An Agile Development project at BrainStation. We were split into groups of 4-5 web dev students breaking work into SCRUM and KANBAN boards',
@@ -48,7 +48,7 @@ export const projectData = [
     website: 'https://instock-bs.herokuapp.com/warehouse',
   },
   {
-    image: { wnba },
+    image: wnba,
     projectname: 'WNBA Player Page',
     shortdescription:
       "This was a 24-hour industry project at BrainStation where we took up a challenge faced by one of the industry partners. This was a cross-functional collaborative project where I teamed up with fellow web developers, data analysts, UX designers, and digital marketers to find a solution to the company's problem.",
@@ -65,7 +65,7 @@ export const projectData = [
     website: 'https://wnba-bucket-list.herokuapp.com/',
   },
   {
-    image: { pokemon },
+    image: pokemon,
     projectname: 'Pokemon Card Dealership',
     shortdescription:
       'Pokemon card dealership is an e-commerce platform that sells rare pokemon cards to customers. This project was part of the 24 hour pair programming hackathon at BrainStation. I paired up with my colleague Irene Xing to design a fun and interactive interface.',
