@@ -2,3 +2,36 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
+
+.footer{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  &__paragraph{
+    @include page-label;
+  }
+  &__linkcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  &__link{
+    text-decoration: none;
+  }
+  &__button{
+    @include primarybtn;
+  }
+  &__socials{
+    @extend .footer__linkcontainer;
+  }
+  &__icon{
+    padding: 1rem;
+  }
+  &__copyright{
+    @include footer-label;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+}

@@ -90,10 +90,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include page-label();
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 1.25rem;
   background-color: $portfolio-yellow;
+  @include tablet(){
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+  }
   &:hover{
     transition-duration: 0.2s;
     background-color: $portfolio-darkyellow;
