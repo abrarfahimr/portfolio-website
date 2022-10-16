@@ -1,11 +1,10 @@
 import './LandingPage.scss';
 import memoji from "../../assets/images/memoji.png";
-import hand from '../../assets/images/hand.gif';
 
 const LandingPage = () => {
   return (
     <div className="landing">
-      <div className="landing__container">
+      <main className="landing__container">
         <div className='landing__headercontainer'>
           <h1 className="landing__header">
             Hi! <span className="landing__animate">👋</span> This is Abrar,
@@ -18,7 +17,7 @@ const LandingPage = () => {
         <p className="landing__focus">
           Focus: Web Development, Frontend, Backend, UX/UI
         </p>
-      </div>
+      </main>
       <div className="landing__imagecontainer">
         <img src={memoji} alt="memoji" className="landing__image" />
       </div>

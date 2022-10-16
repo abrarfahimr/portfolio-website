@@ -13,11 +13,11 @@ const Header = ({ toggleSideBar, sidebar }) => {
         className={sidebar ? 'backdrop--open' : 'backdrop'}
         onClick={toggleSideBar}
       ></div>
-      <nav className="header">
+      <header className="header">
         <NavLink to="/">
           <img src={logo} alt="website logo" className="header__logo" />
         </NavLink>
-        <div className="header__links">
+        <nav className="header__links">
           <div className="header__link">
             <button className="header__resume">Resume</button>
           </div>
@@ -47,8 +47,8 @@ const Header = ({ toggleSideBar, sidebar }) => {
             onClick={toggleSideBar}
           />
           
-        </div>
-      </nav>
+        </nav>
+      </header>
     </>
   );
 };
