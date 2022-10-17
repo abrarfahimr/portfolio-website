@@ -1,0 +1,48 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.work{
+  padding: 1rem;
+  &__title{
+    @include page-header;
+  }
+  &__image{
+    width: 100%;
+    height: auto;
+  }
+  &__subtitle{
+    @include section-header;
+    margin-top: 1.5rem;
+  }
+  &__paragraph{
+    @include page-body;
+    &--frontend{
+      color: $portfolio-purple;
+    }
+    &--backend {
+      color: $portfolio-blue;
+    }
+    &--others{
+      color: $portfolio-yellow;
+    }
+    &--none{
+      display: none; 
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  &__linktag{
+    &--none{
+      display: none;
+    }
+  }
+  &__link{
+    padding: 0 1rem;
+  }
+}

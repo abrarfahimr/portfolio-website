@@ -5,7 +5,8 @@ import pokemon from '../assets/images/pokemon.png';
 
 export const projectData = [
   {
-    image: dashboard ,
+    id: 'coffee_corner',
+    image: dashboard,
     projectname: 'Coffee Corner Dashboard',
     shortdescription:
       'Coffee Corner is a dashboard created for a startup business that specializes in selling coffee products from different roasters around the world.',
@@ -27,7 +28,8 @@ export const projectData = [
     github: 'https://github.com/abrarfahimr/coffee-corner-frontend',
   },
   {
-    image: instock ,
+    id: 'instock',
+    image: instock,
     projectname: 'Instock',
     shortdescription:
       'An Agile Development project at BrainStation. We were split into groups of 4-5 web dev students breaking work into SCRUM and KANBAN boards',
@@ -48,6 +50,7 @@ export const projectData = [
     website: 'https://instock-bs.herokuapp.com/warehouse',
   },
   {
+    id: 'wnba',
     image: wnba,
     projectname: 'WNBA Player Page',
     shortdescription:
@@ -63,8 +66,10 @@ export const projectData = [
       },
     ],
     website: 'https://wnba-bucket-list.herokuapp.com/',
+    github: 'https://github.com/abrarfahimr/wnba-player-page'
   },
   {
+    id: 'pokemon_dealership',
     image: pokemon,
     projectname: 'Pokemon Card Dealership',
     shortdescription:
@@ -83,6 +88,7 @@ export const projectData = [
       },
     ],
     website: 'https://youtu.be/YM1i9z2bAu0',
+    github: 'https://github.com/abrarfahimr/pokemon-card-dealership'
   },
 ];
 

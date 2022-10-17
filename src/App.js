@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import { useState } from 'react';
+import WorkPage from './pages/WorkPage/WorkPage';
 
 function App() {
   const [sidebar, setSideBar] = useState(false);
@@ -20,6 +21,7 @@ function App() {
         <NavBar toggleSideBar={toggleSideBar} sidebar={sidebar} />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
+          <Route path='/:id' element={<WorkPage/>}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
         </Routes>
         <Footer />

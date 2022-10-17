@@ -1,6 +1,7 @@
 import './LandingPage.scss';
 import memoji from "../../assets/images/memoji.png";
 import { projectData } from '../../data/projectData';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4} from 'uuid';
 
 
@@ -32,7 +33,7 @@ const LandingPage = () => {
         {projectData.map((project) => {
           return (
             <div className="landing__project" key={uuidv4()}>
-              <div className='landing__overlay'></div>
+              <Link className='landing__overlay' to={`/${project.id}`}></Link>
               <img
                 className="landing__projectimage"
                 src={project.image}
