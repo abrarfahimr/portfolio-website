@@ -2,3 +2,47 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
+
+.about{
+  padding: 1rem;
+  &__heading{
+    @include page-header;
+  }
+  &__image{
+    width: 100%;
+    height: auto;
+  }
+  &__paragraph{
+    @include page-body;
+  }
+  &__current{
+    padding: 1rem;
+    width: 100%;
+    background-color: $portfolio-black;
+    border-radius: 0.625rem;
+  }
+  &__title{
+    @include section-header;
+    margin: 1rem 0 0 0;
+  }
+  &__label{
+    @include page-label;
+  }
+  &__listcontainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__ulist{
+    list-style: none;
+    padding: 0;
+  }
+  &__list{
+    @include page-body;
+    display: flex;
+    padding: 0.5rem 0;
+  }
+  &__bulletpoint{
+   margin-right: 0.5rem; 
+  }
+}
