@@ -24,7 +24,7 @@ const WorkPage = () => {
   },[])
 
   return (
-    <div className="work">
+    <section className="work">
       <h1 className="work__title">{project.projectname}</h1>
       <div className="work__imagecontainer">
         <a
@@ -79,7 +79,7 @@ const WorkPage = () => {
           <img src={githubIcon} alt="website icon" className="work__link" />
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 

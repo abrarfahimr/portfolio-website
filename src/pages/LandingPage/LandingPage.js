@@ -28,24 +28,26 @@ const LandingPage = () => {
       </main>
       <section className="landing__projects">
         <h2 className="landing__sectionheader">My Projects</h2>
+        <div className="landing__projectcontainer">
+          {projectData.map((project) => {
+            return (
+              <div className="landing__project" key={uuidv4()}>
+                <Link className="landing__overlay" to={`/${project.id}`}></Link>
+                <img
+                  className="landing__projectimage"
+                  src={project.image}
+                  alt="project thumbnail"
+                ></img>
+                <h3 className="landing__title">{project.projectname}</h3>
+                <p className="landing__description">
+                  {project.shortdescription}
+                </p>
+                <p className="landing__stack">{project.techstackbrief}</p>
+              </div>
+            );
+          })}
+        </div>
       </section>
-      <div className="landing__projectcontainer">
-        {projectData.map((project) => {
-          return (
-            <div className="landing__project" key={uuidv4()}>
-              <Link className='landing__overlay' to={`/${project.id}`}></Link>
-              <img
-                className="landing__projectimage"
-                src={project.image}
-                alt="project thumbnail"
-              ></img>
-              <h3 className="landing__title">{project.projectname}</h3>
-              <p className='landing__description'>{project.shortdescription}</p>
-              <p className='landing__stack'>{project.techstackbrief}</p>
-            </div>
-          );
-        })}
-      </div>
     </div>
   );
 }

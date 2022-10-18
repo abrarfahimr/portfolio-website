@@ -5,6 +5,7 @@
 
 .work{
   padding: 1rem;
+  @include borderBottom;
   &__title{
     @include page-header;
   }

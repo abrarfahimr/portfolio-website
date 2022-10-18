@@ -5,6 +5,7 @@
 
 .about{
   padding: 1rem;
+  @include borderBottom;
   &__heading{
     @include page-header;
   }
@@ -14,6 +15,7 @@
   }
   &__paragraph{
     @include page-body;
+    line-height: 1.45rem;
   }
   &__current{
     padding: 1rem;
@@ -45,4 +47,10 @@
   &__bulletpoint{
    margin-right: 0.5rem; 
   }
+  &__subtitle{
+    @include page-body;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+  }
+
 }

@@ -2,10 +2,11 @@ import './AboutPage.scss';
 import profile from '../../assets/images/profile.png';
 import purple from '../../assets/icons/hexagon-purple.svg';
 import blue from '../../assets/icons/hexagon-blue.svg';
+import yellow from '../../assets/icons/hexagon-yellow.svg';
 
 const AboutPage = () => {
   return (
-    <div className="about">
+    <section className="about">
       <h1 className="about__heading">About Me 👀</h1>
       <div className="about__imagecontainer">
         <img src={profile} alt="profile" className="about__image" />
@@ -144,8 +145,93 @@ const AboutPage = () => {
       </div>
 
       {/* others */}
-      
-    </div>
+      <div className="about__frontend">
+        <h2 className="about__title">Backend</h2>
+        <div className="about__listcontainer">
+          <div className="about__list1">
+            <ul className="about__ulist">
+              <li className="about__list">
+                <img
+                  src={yellow}
+                  alt="yellow hexagon icon"
+                  className="about__bulletpoint"
+                />
+                Auth0
+              </li>
+              <li className="about__list">
+                <img
+                  src={yellow}
+                  alt="yellow hexagon icon"
+                  className="about__bulletpoint"
+                />
+                Heroku
+              </li>
+            </ul>
+          </div>
+          <div className="about__list2">
+            <ul className="about__ulist">
+              <li className="about__list">
+                <img
+                  src={yellow}
+                  alt="yellow hexagon icon"
+                  className="about__bulletpoint"
+                />
+                Postman
+              </li>
+              <li className="about__list">
+                <img
+                  src={yellow}
+                  alt="yellow hexagon icon"
+                  className="about__bulletpoint"
+                />
+                Figma
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h2 className="about__title">Hobbies and Interests</h2>
+      <div className="about__hobbies">
+        <h3 className="about__subtitle">Nerd for technology and design 🧑‍💻</h3>
+        <p className="about__paragraph">
+          I love to watch daily youtube videos about the newest technology and
+          designs. Some areas of interest are in software development, tech, PC
+          builds, UI design.
+        </p>
+      </div>
+      <div className="about__hobbies">
+        <h3 className="about__subtitle">Drawing and Painting 🧑‍🎨</h3>
+        <p className="about__paragraph">
+          I started painting at a young age, oil painting scenic environments
+          and people in the rural areas of Bangladesh. Moved to designing
+          architectural structures and now looking to get into digital designing
+          in photoshop.
+        </p>
+      </div>
+      <div className="about__hobbies">
+        <h3 className="about__subtitle">Anime and Video Games 🎮</h3>
+        <p className="about__paragraph">
+          I was born in a generation in love with video gaming so this is a
+          no-brainer. But some of my favourite games are Dota 2, Monster Hunter
+          World, and the Dark Souls series. Anime is my only source of
+          entertainment besides youtube. I rarely see any shows on Netflix
+          unless it's about mythological fiction like The Witcher and Lord of
+          The Rings. I am a sucker for romance-comedy series.
+        </p>
+      </div>
+      <div className="about__hobbies">
+        <h3 className="about__subtitle">
+          “I’m going on an adventure!”~Bilbo Baggins ✈️
+        </h3>
+        <p className="about__paragraph">
+          I am grateful to my parents to have let me travel to so many countries
+          from the early age of 5. However, traveling alone gives me a sense of
+          peace, and would highly recommend anyone to do try it once in their
+          lifetime. My favourite cities to visit so far are London, Singapore,
+          and Thailand. My dream destination is to visit Japan for 2 weeks.
+        </p>
+      </div>
+    </section>
   );
 }
 
