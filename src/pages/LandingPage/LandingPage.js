@@ -27,7 +27,7 @@ const LandingPage = () => {
         </div>
       </main>
       <section className="landing__projects">
-        <h2 className="landing__sectionheader">My Projects</h2>
+        <h2 className="landing__sectionheader" id='project__start'>My Projects</h2>
         <div className="landing__projectcontainer">
           {projectData.map((project) => {
             return (

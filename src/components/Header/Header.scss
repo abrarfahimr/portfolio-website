@@ -45,6 +45,10 @@
       border: none;
       border-radius: 0.5rem;
       background-color: $portfolio-yellow;
+      &:hover{
+        transition-duration: 0.2s;
+        background-color: $portfolio-darkyellow;
+      }
     }
    
   }
