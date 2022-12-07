@@ -18,9 +18,14 @@ const Header = ({ toggleSideBar, sidebar }) => {
           <img src={logo} alt="website logo" className="header__logo" />
         </NavLink>
         <nav className="header__links">
-          <div className="header__link">
+          <a
+            className="header__link"
+            href="https://drive.google.com/file/d/1SbDMS7dVhIPRq7-RqqCR2AUiFmaSLohU/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="header__resume">Resume</button>
-          </div>
+          </a>
 
           <div className="header__link">
             <img src={code} alt="work icon" className="header__icon" />
@@ -46,7 +51,6 @@ const Header = ({ toggleSideBar, sidebar }) => {
             className="header__sidebar"
             onClick={toggleSideBar}
           />
-          
         </nav>
       </header>
     </>

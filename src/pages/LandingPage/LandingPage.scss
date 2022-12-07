@@ -40,6 +40,9 @@
 .landing{
   padding: 1rem;
   @include borderBottom;
+  @include tablet{
+    padding: 2.5rem;
+  }
   &__header{
     @include page-header;
   }

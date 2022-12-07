@@ -7,8 +7,46 @@
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  @include tablet {
+    padding: 1rem 2.5rem;
+  }
+  &__links{
+    @include tablet{
+      display: flex;
+    }
+  }
   &__link{
     display: none;
+    @include tablet{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2.5rem;
+      text-decoration: none;
+    }
+  }
+  &__anchor{
+    @include tablet{
+      text-decoration: none;
+      color: $portfolio-yellow;
+    }
+  }
+  &__icon{
+    margin-right: 0.25rem;
+  }
+  &__sidebar{
+    @include tablet{
+      display: none;
+    }
+  }
+  &__resume{
+    @include tablet{
+      padding: 0.5rem 0.75rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $portfolio-yellow;
+    }
+   
   }
 }
 
