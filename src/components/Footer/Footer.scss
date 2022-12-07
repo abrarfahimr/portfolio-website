@@ -14,10 +14,16 @@
     justify-content: center;
     align-items: center;
   }
+  @include desktop{
+    padding: 2rem 8.125rem;
+  }
   &__paragraph{
     @include page-label;
     @include tablet{
       text-align: center;
+    }
+    @include desktop{
+      width: 70%;
     }
     &--bold{
       font-weight: 500;

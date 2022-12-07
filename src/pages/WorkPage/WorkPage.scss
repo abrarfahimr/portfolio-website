@@ -9,8 +9,22 @@
   @include tablet{
     padding: 1rem 4rem;
   }
+  @include desktop{
+    padding: 2rem 8.125rem;
+  }
   &__title{
     @include page-header;
+  }
+  &__imagecontainer{
+    @include desktop{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__imagelink{
+    @include desktop{
+      width: 75%;
+    }
   }
   &__image{
     width: 100%;
@@ -19,6 +33,9 @@
   &__subtitle{
     @include section-header;
     margin-top: 1.5rem;
+    @include desktop{
+      margin-top: 3rem;
+    }
   }
   &__paragraph{
     @include page-body;

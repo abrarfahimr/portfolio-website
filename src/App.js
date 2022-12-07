@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import AboutPage from './pages/AboutPage/AboutPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import Header from './components/Header/Header';
@@ -20,9 +20,9 @@ function App() {
         <Header toggleSideBar={toggleSideBar} sidebar={sidebar} />
         <NavBar toggleSideBar={toggleSideBar} sidebar={sidebar} />
         <Routes>
-          <Route path="/" element={<LandingPage />}></Route>
-          <Route path='/:id' element={<WorkPage/>}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/" element={<LandingPage />}/>
+          <Route path='/:id' element={<WorkPage/>}/>
+          <Route path="/about" element={<AboutPage />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

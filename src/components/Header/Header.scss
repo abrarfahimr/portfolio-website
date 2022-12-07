@@ -10,6 +10,9 @@
   @include tablet {
     padding: 1rem 2.5rem;
   }
+  @include desktop{
+    padding: 2rem 8.125rem;
+  }
   &__links{
     @include tablet{
       display: flex;

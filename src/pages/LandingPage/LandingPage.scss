@@ -41,12 +41,17 @@
   padding: 1rem;
   @include borderBottom;
   @include tablet{
-    padding: 1rem 2.5rem;
+    padding: 0;
   }
+
   &__container{
     @include borderBottom;
     @include tablet{
       display: flex;
+      padding: 1rem 2.5rem 0 2.5rem;
+    }
+    @include desktop{
+      padding: 2rem 8.125rem 0 10.9375rem;
     }
   }
   &__header{
@@ -54,9 +59,19 @@
   }
   &__subheader{
     @include landing-subheader;
+    @include desktop{
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
   }
   &__focus{
     font-size: 0.875rem;
+    @include tablet{
+      font-size: 1rem;
+    }
+    @include tablet{
+      font-size: 1.5rem;
+    }
   }
   &__animate{
     animation-name: wave;
@@ -86,15 +101,30 @@
   }
   &__sectionheader{
     @include section-header;
+    @include tablet{
+      margin: 2rem 0 1.5rem 0;
+    }
+    @include desktop{
+      font-size: 1.75rem;
+      margin: 4rem 0 2rem 0;
+    }
   }
   &__projects{
     @include tablet{
-      padding: 0 2rem;
+      padding: 0 4.25rem;
+    }
+    @include desktop{
+      padding: 0 8.125rem 4rem 8.125rem;
     }
   }
   &__projectcontainer{
     display: flex;
     flex-direction: column;
+    @include desktop{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
   &__project{
     position: relative;
@@ -107,10 +137,16 @@
       padding: 1rem;
       margin-bottom: 3rem;
     }
+    @include desktop{
+      width: 48%;
+    }
   }
   &__projectimage{
     width: 100%;
     height: auto;
+    @include tablet{
+      height: 40%;
+    }
   }
   &__title{
     @include section-header;

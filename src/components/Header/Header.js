@@ -30,7 +30,7 @@ const Header = ({ toggleSideBar, sidebar }) => {
           <div className="header__link">
             <img src={code} alt="work icon" className="header__icon" />
             <a
-              href="#project__start"
+              href="/#project__start"
               className="header__anchor"
             >
               Work
