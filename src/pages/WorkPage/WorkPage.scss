@@ -6,6 +6,9 @@
 .work{
   padding: 1rem;
   @include borderBottom;
+  @include tablet{
+    padding: 1rem 4rem;
+  }
   &__title{
     @include page-header;
   }
@@ -19,6 +22,9 @@
   }
   &__paragraph{
     @include page-body;
+    @include tablet{
+      font-size: 1.25rem;
+    }
     &--frontend{
       color: $portfolio-purple;
     }

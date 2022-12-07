@@ -100,9 +100,9 @@
     padding: 0.5rem;
     border-radius: 0.625rem;
     margin-bottom: 2rem;
-    &:hover{
-      transition-duration: 0.2s;
-      background-color: $portfolio-grey700;
+    @include tablet{
+      padding: 1rem;
+      margin-bottom: 3rem;
     }
   }
   &__projectimage{

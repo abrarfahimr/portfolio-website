@@ -47,7 +47,7 @@ export const projectData = [
           'In future sprints we would like to implement a database for our backend. We ran into issues where the data would not load at all so further testing is needed to improve the efficiency and performance of the site.',
       },
     ],
-    website: 'https://instock-bs.herokuapp.com/warehouse',
+    website: 'https://instock-frontend.onrender.com/warehouse',
   },
   {
     id: 'wnba',
@@ -66,7 +66,7 @@ export const projectData = [
       },
     ],
     website: 'https://wnba-bucket-list.herokuapp.com/',
-    github: 'https://github.com/abrarfahimr/wnba-player-page'
+    github: 'https://github.com/abrarfahimr/wnba-player-page',
   },
   {
     id: 'pokemon_dealership',
@@ -88,7 +88,7 @@ export const projectData = [
       },
     ],
     website: 'https://youtu.be/YM1i9z2bAu0',
-    github: 'https://github.com/abrarfahimr/pokemon-card-dealership'
+    github: 'https://github.com/abrarfahimr/pokemon-card-dealership',
   },
 ];
 
