@@ -9,6 +9,9 @@
   @include tablet{
     padding: 1rem 4rem;
   }
+  @include desktop{
+    padding: 2rem 8.125rem;
+  }
   &__heading{
     @include page-header;
   }
@@ -25,6 +28,9 @@
     @include tablet{
       width: 80%;
     }
+    @include desktop{
+      width: 50%;
+    }
   }
   &__paragraph{
     @include page-body;
@@ -35,6 +41,10 @@
     width: 100%;
     background-color: $portfolio-black;
     border-radius: 0.625rem;
+    @include desktop{
+      margin: 4rem 0;
+      width: 60%;
+    }
   }
   &__title{
     @include section-header;
@@ -42,11 +52,21 @@
   }
   &__label{
     @include page-label;
+    @include desktop{
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
   }
   &__listcontainer{
     width: 70%;
     display: flex;
     justify-content: space-between;
+    @include tablet{
+      width: 55%;
+    }
+    @include desktop{
+      width: 70%;
+    }
   }
   &__ulist{
     list-style: none;
@@ -64,6 +84,26 @@
     @include page-body;
     font-weight: 600;
     margin: 1.5rem 0 1rem 0;
+    @include desktop{
+      margin: 2.5rem 0 1rem 0;
+    }
+  }
+  &__hobbiescontainer{
+    @include desktop{
+      margin: 4rem 0;
+    }
+  }
+  &__skills{
+    @include desktop{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__stack{
+    @include desktop{
+      width: 45%;
+    }
   }
 
 }
