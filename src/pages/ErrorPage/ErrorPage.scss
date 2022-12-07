@@ -1,0 +1,53 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 60vh;
+  @include borderBottom;
+
+  @include tablet {
+    padding: 2.25rem
+  }
+
+  @include desktop {
+    padding: 20rem 8.125rem;
+  }
+
+  &__heading {
+    @include page-header;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__description {
+    @include page-body;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    @include primarybtn;
+    @include page-label;
+    background-color: $portfolio-yellow;
+    color: $portfolio-black;
+
+    &:hover {
+      transition-duration: 0.2s;
+      background-color: $portfolio-darkyellow;
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+
+    @include desktop {
+      width: 15%;
+    }
+  }
+}

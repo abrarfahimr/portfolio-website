@@ -32,7 +32,7 @@ const LandingPage = () => {
           {projectData.map((project) => {
             return (
               <div className="landing__project" key={uuidv4()}>
-                <Link className="landing__overlay" to={`/${project.id}`}></Link>
+                <Link className="landing__overlay" to={`/work/${project.id}`}></Link>
                 <img
                   className="landing__projectimage"
                   src={project.image}
