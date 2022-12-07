@@ -41,7 +41,7 @@
   padding: 1rem;
   @include borderBottom;
   @include tablet{
-    padding: 2.5rem;
+    padding: 1rem 2.5rem;
   }
   &__container{
     @include borderBottom;
@@ -68,6 +68,9 @@
   &__headercontainer{
     @include tablet{
       width: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
   &__imagecontainer{

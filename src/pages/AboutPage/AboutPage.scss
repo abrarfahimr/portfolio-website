@@ -6,12 +6,25 @@
 .about{
   padding: 1rem;
   @include borderBottom;
+  @include tablet{
+    padding: 1rem 4rem;
+  }
   &__heading{
     @include page-header;
+  }
+  &__imagecontainer{
+    @include tablet{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
   }
   &__image{
     width: 100%;
     height: auto;
+    @include tablet{
+      width: 80%;
+    }
   }
   &__paragraph{
     @include page-body;
