@@ -35,7 +35,12 @@ const Footer = () => {
             alt="linkedin icon"
           ></img>
         </a>
-        <a className="footer__links" href="https://github.com/abrarfahimr">
+        <a
+          className="footer__links"
+          href="https://github.com/abrarfahimr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className="footer__icon" src={github} alt="github icon"></img>
         </a>
       </div>
