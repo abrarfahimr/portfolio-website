@@ -27,10 +27,10 @@
     height: auto;
     @include slideIn-before;
     @include tablet{
-      width: 80%;
+      width: 50vw;
     }
     @include desktop{
-      width: 50%;
+      max-width: 30vw;
     }
     &--animate{
       @extend .about__image;

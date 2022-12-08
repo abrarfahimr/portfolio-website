@@ -54,6 +54,7 @@
     }
     @include desktop{
       padding: 2rem 8.125rem 0 10.9375rem;
+      justify-content: center;
     }
     &--animate {
       @extend .landing__container;
@@ -68,15 +69,13 @@
     @include desktop{
       font-size: 1.75rem;
       line-height: 2.5rem;
+      max-width: 90%;
     }
   }
   &__focus{
     font-size: 0.875rem;
     @include tablet{
       font-size: 1rem;
-    }
-    @include tablet{
-      font-size: 1.5rem;
     }
   }
   &__animate{
@@ -93,12 +92,20 @@
       flex-direction: column;
       justify-content: center;
     }
+    @include desktop{
+      width: 50%;
+      margin-right: 2rem;
+    }
   }
   &__imagecontainer{
     display: none;
     @include tablet{
-      width: 35%;
+      max-width: 35vw;
       display: flex;
+      align-items: flex-end;
+    }
+    @include desktop{
+      max-width: 25vw;
     }
   }
   &__image{
@@ -156,9 +163,6 @@
   &__projectimage{
     width: 100%;
     height: auto;
-    @include tablet{
-      height: 40%;
-    }
   }
   &__title{
     @include section-header;
