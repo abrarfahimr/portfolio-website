@@ -13,6 +13,12 @@
   @include desktop{
     padding: 2rem 8.125rem;
   }
+  &__logo{
+    @include desktop{
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
   &__links{
     @include tablet{
       display: flex;

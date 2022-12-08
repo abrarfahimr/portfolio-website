@@ -109,3 +109,15 @@
 @mixin borderBottom {
   border-bottom: 1px solid $portfolio-grey700;
 }
+
+//Animations
+@mixin slideIn-before {
+  opacity: 0;
+  transition-duration: 1s;
+  transform: translateY(20%);
+}
+
+@mixin slideIn-after {
+  opacity: 1;
+  transform: translateY(0%);
+}

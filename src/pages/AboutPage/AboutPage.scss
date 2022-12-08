@@ -25,16 +25,26 @@
   &__image{
     width: 100%;
     height: auto;
+    @include slideIn-before;
     @include tablet{
       width: 80%;
     }
     @include desktop{
       width: 50%;
     }
+    &--animate{
+      @extend .about__image;
+      @include slideIn-after;
+    }
   }
   &__paragraph{
     @include page-body;
     line-height: 1.45rem;
+    @include slideIn-before;
+    &--animate{
+      @extend .about__paragraph;
+      @include slideIn-after;
+    }
   }
   &__current{
     padding: 1rem;
@@ -52,9 +62,14 @@
   }
   &__label{
     @include page-label;
+    @include slideIn-before;
     @include desktop{
       font-size: 1.25rem;
       line-height: 1.75rem;
+    }
+    &--animate{
+      @extend .about__label;
+      @include slideIn-after;
     }
   }
   &__listcontainer{
@@ -89,15 +104,25 @@
     }
   }
   &__hobbiescontainer{
+    @include slideIn-before;
     @include desktop{
       margin: 4rem 0;
     }
+    &--animate{
+      @extend .about__hobbiescontainer;
+      @include slideIn-after;
+    }
   }
   &__skills{
+    @include slideIn-before;
     @include desktop{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    &--animate{
+      @extend .about__skills;
+      @include slideIn-after;
     }
   }
   &__stack{
@@ -105,5 +130,8 @@
       width: 45%;
     }
   }
-
+  &__description{
+    @include page-body;
+    line-height: 1.45rem;
+  }
 }

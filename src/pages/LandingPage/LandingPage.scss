@@ -45,6 +45,8 @@
   }
 
   &__container{
+    opacity: 0;
+    transition: all 1.5s;
     @include borderBottom;
     @include tablet{
       display: flex;
@@ -52,6 +54,10 @@
     }
     @include desktop{
       padding: 2rem 8.125rem 0 10.9375rem;
+    }
+    &--animate {
+      @extend .landing__container;
+      opacity: 1;
     }
   }
   &__header{
@@ -133,12 +139,18 @@
     padding: 0.5rem;
     border-radius: 0.625rem;
     margin-bottom: 2rem;
+    // transform: translateY(-80%);
+    // transition: all 1s;
     @include tablet{
       padding: 1rem;
       margin-bottom: 3rem;
     }
     @include desktop{
       width: 48%;
+    }
+    &--animate{
+      @extend .landing__project;
+      // transform: translateY(0%);
     }
   }
   &__projectimage{

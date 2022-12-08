@@ -3,23 +3,55 @@ import profile from '../../assets/images/profile.png';
 import purple from '../../assets/icons/hexagon-purple.svg';
 import blue from '../../assets/icons/hexagon-blue.svg';
 import yellow from '../../assets/icons/hexagon-yellow.svg';
+import { useInView } from 'react-intersection-observer';
 
 const AboutPage = () => {
+  //Add useInview refs to container to track visibility on screen
+  const { ref: pictureRef, inView: pictureVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: textRef, inView: textVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: currentRef, inView: currentVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: skillRef, inView: skillVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: descriptionRef, inView: descriptionVisible } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <section className="about">
       <h1 className="about__heading">About Me 👀</h1>
-      <div className="about__imagecontainer">
-        <img src={profile} alt="profile" className="about__image" />
+      <div className="about__imagecontainer" ref={pictureRef}>
+        <img
+          src={profile}
+          alt="profile"
+          className={`${
+            pictureVisible ? 'about__image--animate' : 'about__image'
+          }`}
+        />
       </div>
-      <div className="about__description">
-        <p className="about__paragraph">
+      <div className="about__description" ref={textRef}>
+        <p
+          className={`${
+            textVisible ? 'about__paragraph--animate' : 'about__paragraph'
+          }`}
+        >
           I am a web development graduate from BrainStation (September 2022). I
           have a background in architecture and am self-taught as a product
           designer. My skills focus on developing interactive, user-friendly,
           and scalable digital experiences by working on cross-functional teams
           ensuring high-quality output and efficient performance.
         </p>
-        <p className="about__paragraph">
+        <p
+          className={`${
+            textVisible ? 'about__paragraph--animate' : 'about__paragraph'
+          }`}
+        >
           I have gained relevant experience as a web developer project-based
           learning at BrainStation participating in hackathons and capstone
           projects where I have demonstrated strong technical skills in
@@ -36,14 +68,23 @@ const AboutPage = () => {
           it more scalable to account for future growth.
         </p>
       </div>
-      <div className="about__current">
-        <p className="about__label">
+      <div className="about__current" ref={currentRef}>
+        <p
+          className={`${
+            currentVisible ? 'about__label--animate' : 'about__label'
+          }`}
+        >
           Currently looking for full stack, frontend, and backend software
           development jobs.
         </p>
       </div>
 
-      <div className="about__skills">
+      <div
+        className={`${
+          skillVisible ? 'about__skills--animate' : 'about__skills'
+        }`}
+        ref={skillRef}
+      >
         {/* frontend list */}
         <div className="about__stack">
           <h2 className="about__title">Frontend</h2>
@@ -193,11 +234,18 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="about__hobbiescontainer">
+      <div
+        className={`${
+          descriptionVisible
+            ? 'about__hobbiescontainer--animate'
+            : 'about__hobbiescontainer'
+        }`}
+        ref={descriptionRef}
+      >
         <h2 className="about__title">Hobbies and Interests</h2>
         <div className="about__hobbies">
           <h3 className="about__subtitle">Nerd for technology and design 🧑‍💻</h3>
-          <p className="about__paragraph">
+          <p className="about__description">
             I love to watch daily youtube videos about the newest technology and
             designs. Some areas of interest are in software development, tech,
             PC builds, UI design.
@@ -205,7 +253,7 @@ const AboutPage = () => {
         </div>
         <div className="about__hobbies">
           <h3 className="about__subtitle">Drawing and Painting 🧑‍🎨</h3>
-          <p className="about__paragraph">
+          <p className="about__description">
             I started painting at a young age, oil painting scenic environments
             and people in the rural areas of Bangladesh. Moved to designing
             architectural structures and now looking to get into digital
@@ -214,7 +262,7 @@ const AboutPage = () => {
         </div>
         <div className="about__hobbies">
           <h3 className="about__subtitle">Anime and Video Games 🎮</h3>
-          <p className="about__paragraph">
+          <p className="about__description">
             I was born in a generation in love with video gaming so this is a
             no-brainer. But some of my favourite games are Dota 2, Monster
             Hunter World, and the Dark Souls series. Anime is my only source of
@@ -227,7 +275,7 @@ const AboutPage = () => {
           <h3 className="about__subtitle">
             “I’m going on an adventure!”~Bilbo Baggins ✈️
           </h3>
-          <p className="about__paragraph">
+          <p className="about__description">
             I am grateful to my parents to have let me travel to so many
             countries from the early age of 5. However, traveling alone gives me
             a sense of peace, and would highly recommend anyone to do try it

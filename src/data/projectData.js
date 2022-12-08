@@ -24,7 +24,7 @@ export const projectData = [
           'While working I came into some problems and areas of opportunity that I want to highlight from future sprints. First is an opportunity to dynamically update statistics as new transactions happen. Building for real time statistics such as that of salesforce is an important opportunity area to consider so users can immediately see major issues as soon as they happen. One functionality issue I found while creating the product page was the images being imported into a fake directory instead of a public library in the backend server.',
       },
     ],
-    website: 'https://coffee-corner-dashboard.herokuapp.com/',
+    website: 'https://www.loom.com/share/a7637f39f06b477eb05f58ddd5fb5f73',
     github: 'https://github.com/abrarfahimr/coffee-corner-frontend',
   },
   {
@@ -65,7 +65,7 @@ export const projectData = [
           'Through thorough research we came up with the solution of redesigning the players page to allow for current and prospective fans to effortlessly find players and create connections using data to drive player recognition. Our strategy was to increase visibility and brand recognition with the WNBA to increase viewership and engagement. Lean into creatively showcasing the players of the WNBA on not only a professional level, but a personal level as well and create an emotional bond between the viewer and the WNBA player(s).',
       },
     ],
-    website: 'https://wnba-bucket-list.herokuapp.com/',
+    website: 'https://wnba-player-page.onrender.com',
     github: 'https://github.com/abrarfahimr/wnba-player-page',
   },
   {
@@ -87,7 +87,7 @@ export const projectData = [
           'Overall we enjoyed spending countless of hours figuring out what we wanted to do and this proved to be a big learning experience for us. Although this is far from becoming a finished project, it has room to grow. One area of oppurtunity would be using the DELETE method to remove the quantity of cards left in the database. I would love to come back and add more features to it whenever I can.',
       },
     ],
-    website: 'https://youtu.be/YM1i9z2bAu0',
+    website: 'https://pokemon-card-dealership.onrender.com',
     github: 'https://github.com/abrarfahimr/pokemon-card-dealership',
   },
 ];
