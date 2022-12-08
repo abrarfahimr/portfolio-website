@@ -16,9 +16,14 @@
     @include page-header;
   }
   &__imagecontainer{
+    @include slideIn-before;
     @include desktop{
       display: flex;
       justify-content: center;
+    }
+    &--animate{
+      @extend .work__imagecontainer;
+      @include slideIn-after;
     }
   }
   &__imagelink{
@@ -35,6 +40,20 @@
     margin-top: 1.5rem;
     @include desktop{
       margin-top: 3rem;
+    }
+  }
+  &__stack{
+    @include slideIn-before;
+    &--animate{
+      @extend .work__stack;
+      @include slideIn-after;
+    }
+  }
+  &__paragraphs{
+    @include slideIn-before;
+    &--animate{
+      @extend .work__paragraphs;
+      @include slideIn-after;
     }
   }
   &__paragraph{
@@ -60,6 +79,11 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    @include slideIn-before;
+    &--animate{
+      @extend .work__links;
+      @include slideIn-after;
+    }
   }
   &__linktag{
     &--none{
