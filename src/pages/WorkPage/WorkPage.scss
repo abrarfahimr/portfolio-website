@@ -16,6 +16,7 @@
     @include page-header;
   }
   &__imagecontainer{
+    position: relative;
     @include slideIn-before;
     @include desktop{
       display: flex;

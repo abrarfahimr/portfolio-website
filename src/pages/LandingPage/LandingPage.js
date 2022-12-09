@@ -5,13 +5,15 @@ import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { useInView } from 'react-intersection-observer';
 
-const LandingPage = () => {
 
+const LandingPage = () => {
   //Add useInview refs to container to track visibility on screen
   const { ref: landingRef, inView: elementVisible } = useInView({
     triggerOnce: true,
   });
-  const { ref: projectRef, inView: projectVisible } = useInView();
+  const { ref: projectRef, inView: projectVisible } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <div className="landing">
@@ -41,10 +43,17 @@ const LandingPage = () => {
         <h2 className="landing__sectionheader" id="project__start">
           My Projects
         </h2>
-        <div className="landing__projectcontainer" ref={projectRef}>
-          {projectData.map((project) => {
+        <div
+          className={`${
+            projectVisible
+              ? 'landing__projectcontainer--animate'
+              : 'landing__projectcontainer'
+          }`}
+          ref={projectRef}
+        >
+          {projectData.map((project, index) => {
             return (
-              <div className={`${projectVisible ? "landing__project--animate" : "landing__project" }`} key={uuidv4()}>
+              <div className="landing__project" key={uuidv4()}>
                 <Link
                   className="landing__overlay"
                   to={`/work/${project.id}`}
