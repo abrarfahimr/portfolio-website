@@ -54,6 +54,7 @@
       border: none;
       border-radius: 0.5rem;
       background-color: $portfolio-yellow;
+      cursor: pointer;
       &:hover{
         transition-duration: 0.2s;
         background-color: $portfolio-darkyellow;

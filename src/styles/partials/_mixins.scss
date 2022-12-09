@@ -95,6 +95,7 @@
   border: none;
   border-radius: 1.25rem;
   background-color: $portfolio-yellow;
+  cursor: pointer;
   @include tablet(){
     padding: 1rem 1.5rem;
     border-radius: 2rem;
