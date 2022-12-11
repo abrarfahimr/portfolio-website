@@ -8,8 +8,10 @@ import { useState } from 'react';
 
 const AboutPage = () => {
 
+  //setup states
   const [animate, setAnimate] = useState(false)
   
+  //handle state when clicking on icon
   const handleAnimation = () => {
     setAnimate((prevState => !prevState));
   }

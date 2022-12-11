@@ -11,7 +11,11 @@ import { useState } from 'react';
 import WorkPage from './pages/WorkPage/WorkPage';
 
 function App() {
+
+  //Set up states
   const [sidebar, setSideBar] = useState(false);
+
+  //Open and close side bar
   const toggleSideBar = () => {
     setSideBar((prevState) => !prevState);
   }

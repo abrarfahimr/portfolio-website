@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const WorkPage = () => {
+
+  //Set up states
   const [project, setProject] = useState([]);
   const [backend, setBackend] = useState('');
   const [other, setOther] = useState('');
@@ -15,7 +17,6 @@ const WorkPage = () => {
 
   let { id } = useParams();
 
-  
   //Add useInview refs to container to track visibility on screen
   const { ref:imageRef, inView:imageVisible } = useInView({
     triggerOnce: true,

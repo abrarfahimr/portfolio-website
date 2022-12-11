@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 
 const LandingPage = () => {
+  
   //Add useInview refs to container to track visibility on screen
   const { ref: landingRef, inView: elementVisible } = useInView({
     triggerOnce: true,
