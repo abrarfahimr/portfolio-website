@@ -4,8 +4,16 @@ import purple from '../../assets/icons/hexagon-purple.svg';
 import blue from '../../assets/icons/hexagon-blue.svg';
 import yellow from '../../assets/icons/hexagon-yellow.svg';
 import { useInView } from 'react-intersection-observer';
+import { useState } from 'react';
 
 const AboutPage = () => {
+
+  const [animate, setAnimate] = useState(false)
+  
+  const handleAnimation = () => {
+    setAnimate((prevState => !prevState));
+  }
+
   //Add useInview refs to container to track visibility on screen
   const { ref: pictureRef, inView: pictureVisible } = useInView({
     triggerOnce: true,
@@ -25,7 +33,12 @@ const AboutPage = () => {
 
   return (
     <section className="about">
-      <h1 className="about__heading">About Me 👀</h1>
+      <h1 className="about__heading">
+        About Me
+        <span className={`${animate ? 'about__icon--animate' : 'about__icon'}`} onClick={handleAnimation}>
+          🚀
+        </span>
+      </h1>
       <div className="about__imagecontainer" ref={pictureRef}>
         <img
           src={profile}

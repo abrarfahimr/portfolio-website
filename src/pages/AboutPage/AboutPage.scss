@@ -3,6 +3,22 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
+
+@keyframes animateRocket {
+  0%{
+    transform: scale(1) rotate(45deg);
+  }
+  10%{
+    transform: scale(1.25) rotate(90deg);
+  }
+  20%{
+    transform: scale(1.5) rotate(135deg);
+  }
+  100%{
+    transform: scale(20) translate3d(0vw, 100vh, 0) rotate(135deg);
+  }
+}
+
 .about{
   padding: 1rem;
   @include borderBottom;
@@ -14,6 +30,20 @@
   }
   &__heading{
     @include page-header;
+  }
+  &__icon{
+    display: inline-block;
+    margin-left: 1rem;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2);
+      transition-duration: 0.2s;
+    }
+    &--animate{
+      @extend .about__icon;
+      animation-name: animateRocket;
+      animation-duration: 3s;
+    }
   }
   &__imagecontainer{
     @include tablet{
