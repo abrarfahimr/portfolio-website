@@ -31,7 +31,7 @@ const NavBar = ({ toggleSideBar, sidebar }) => {
         <div className="nav__link">
           <img src={code} alt="work icon" className="nav__icon" />
           <a
-            href="#project__start"
+            href="/#project__start"
             className="nav__anchor"
           >
             Work

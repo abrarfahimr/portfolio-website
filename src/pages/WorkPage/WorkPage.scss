@@ -12,6 +12,9 @@
   @include desktop{
     padding: 2rem 8.125rem;
   }
+  @include largeDesktop{
+    padding: 4rem 20rem;
+  }
   &__title{
     @include page-header;
   }
@@ -29,7 +32,10 @@
   }
   &__imagelink{
     @include desktop{
-      width: 75%;
+      max-width: 75%;
+    }
+    @include largeDesktop{
+      max-width: 60%;
     }
   }
   &__image{

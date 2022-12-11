@@ -13,6 +13,9 @@
   @include desktop{
     padding: 2rem 8.125rem;
   }
+  @include largeDesktop{
+    padding: 2rem 20rem;
+  }
   &__logo{
     @include desktop{
       height: 3.5rem;

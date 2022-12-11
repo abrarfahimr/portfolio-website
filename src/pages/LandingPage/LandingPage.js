@@ -39,10 +39,8 @@ const LandingPage = () => {
           <img src={memoji} alt="memoji" className="landing__image" />
         </div>
       </main>
-      <section className="landing__projects">
-        <h2 className="landing__sectionheader" id="project__start">
-          My Projects
-        </h2>
+      <section className="landing__projects" id="project__start">
+        <h2 className="landing__sectionheader">My Projects</h2>
         <div
           className={`${
             projectVisible

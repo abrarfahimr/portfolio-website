@@ -56,6 +56,9 @@
       padding: 2rem 8.125rem 0 10.9375rem;
       justify-content: center;
     }
+    @include largeDesktop{
+      padding: 2rem 30rem 0 30rem;
+    }
     &--animate {
       @extend .landing__container;
       opacity: 1;
@@ -121,6 +124,9 @@
       font-size: 1.75rem;
       margin: 4rem 0 2rem 0;
     }
+    @include largeDesktop{
+      font-size: 2rem;
+    }
   }
   &__projects{
     @include tablet{
@@ -128,6 +134,9 @@
     }
     @include desktop{
       padding: 0 8.125rem 4rem 8.125rem;
+    }
+    @include largeDesktop{
+      padding: 2rem 20rem 8rem 20rem;
     }
   }
   &__projectcontainer{

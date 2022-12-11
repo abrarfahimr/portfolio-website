@@ -16,6 +16,12 @@
   }
 }
 
+@mixin largeDesktop {
+  @media screen and (min-width: $largeDesktop-min-size){
+    @content;
+  }
+}
+
 //Font Styles
 @mixin page-header{
   font-size: 1.5rem;

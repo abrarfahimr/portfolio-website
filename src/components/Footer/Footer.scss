@@ -17,6 +17,9 @@
   @include desktop{
     padding: 2rem 8.125rem;
   }
+  @include largeDesktop{
+    padding: 2rem 20rem;
+  }
   &__paragraph{
     @include page-label;
     @include tablet{
