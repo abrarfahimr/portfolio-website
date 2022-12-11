@@ -102,13 +102,17 @@
   border-radius: 1.25rem;
   background-color: $portfolio-yellow;
   cursor: pointer;
+  &:active {
+    transition-duration: 0.2s;
+    background-color: $portfolio-darkyellow;
+  }
   @include tablet(){
     padding: 1rem 1.5rem;
     border-radius: 2rem;
-  }
-  &:hover{
-    transition-duration: 0.2s;
-    background-color: $portfolio-darkyellow;
+    &:hover{
+      transition-duration: 0.2s;
+      background-color: $portfolio-darkyellow;
+    }
   }
 }
 
@@ -126,9 +130,15 @@
   height: 100%;
   background-color: $portfolio-grey700;
   opacity: 0;
-  &:hover {
+  &:active{
     transition-duration: 0.2s;
     opacity: 0.3;
+  }
+  @include tablet(){
+    &:hover {
+        transition-duration: 0.2s;
+        opacity: 0.3;
+      }
   }
 }
 
