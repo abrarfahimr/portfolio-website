@@ -1,6 +1,7 @@
 import './Footer.scss';
 import linkedin from '../../assets/icons/linkedin.svg';
 import github from '../../assets/icons/github.svg';
+import ux from '../../assets/icons/ux.svg';
 
 const Footer = () => {
   return (
@@ -42,6 +43,14 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img className="footer__icon" src={github} alt="github icon"></img>
+        </a>
+        <a
+          className="footer__links"
+          href="https://abrarfahimr.notion.site/abrarfahimr/Hi-This-is-Abrar-5369d91b9a1243a38fe0bcab4050338d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="footer__icon" src={ux} alt="ux icon"></img>
         </a>
       </div>
       <p className="footer__copyright">
