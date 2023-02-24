@@ -54,13 +54,13 @@ export const projectData = [
     image: wnba,
     projectname: 'WNBA Player Page',
     shortdescription:
-      "This was a 24-hour industry project at BrainStation where we took up a challenge faced by one of the industry partners. This was a cross-functional collaborative project where I teamed up with fellow web developers, data analysts, UX designers, and digital marketers to find a solution to the company's problem.",
+      "This was a cross-functional collaborative project where I teamed up with fellow web developers, data analysts, UX designers, and digital marketers to find a solution to the Women's National Basketball Association's problem.",
     techstackbrief: 'Javascript, React, SASS',
     frontend: 'HTML, CSS, Javascript, React, SASS',
     description: [
       {
         paragraph1:
-          "This project was a 24 hour industry project at BrainStation where we took up a challenge faced by one of the industry partners. Our industry partner was The Women's National Basketball Association and the challenge was 'How might the WNBA better leverage its ecosystem to make engagement with the League more accessible than ever before?'. This was a cross-functional collaborative project where I teamed up with fellow web developers, data analysts, UX designers, and digital marketers to find a solution to the problem the company was facing.",
+          "The Women's National Basketball Association came to us with a problem statement 'How might the WNBA better leverage its ecosystem to make engagement with the League more accessible than ever before?' This was a cross-functional collaborative project where I teamed up with fellow web developers, data analysts, UX designers, and digital marketers to find a solution to the problem the company was facing.",
         paragraph2:
           'Through thorough research we came up with the solution of redesigning the players page to allow for current and prospective fans to effortlessly find players and create connections using data to drive player recognition. Our strategy was to increase visibility and brand recognition with the WNBA to increase viewership and engagement. Lean into creatively showcasing the players of the WNBA on not only a professional level, but a personal level as well and create an emotional bond between the viewer and the WNBA player(s).',
       },
